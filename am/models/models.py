@@ -39,4 +39,6 @@ class Assets(models.Model):
 	mem = models.CharField(max_length=10, verbose_name=u'内存')
 	idc = models.CharField(max_length=8, choices=IDC)
 	note = models.TextField(verbose_name=u'备注')
+	def __unicode__(self):
+		return self.hostname
 # Create your models here.
