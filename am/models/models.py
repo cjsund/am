@@ -30,7 +30,7 @@ class Assets(models.Model):
 		(u'cc', u'蓝讯'),
 		(u'sh', u'森华')
 	)
-	itmodels = models.CharField(max_length=4, choices=MODELSTYPE)
+	itmodels = models.CharField(max_length=4, choices=MODELSTYPE, verbose_name=u'设备型号')
 	pdate = models.DateField(auto_now=True)
 	twdate = models.DateField(auto_now=True)
 	hostname = models.CharField(max_length=10, verbose_name=u'主机名')
